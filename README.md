@@ -9,22 +9,26 @@ dependencies:
 - cd /path/where/you/want/the/repository
 
   # clone the repository
-  git clone https://www.github.com/Airblader/i3 i3-gaps
+  1.git clone https://www.github.com/Airblader/i3 i3-gaps
 
   
-
-  cd i3-gaps
+  2.cd i3-gaps
 
   # compile & install
-  autoreconf --force --install
-  rm -rf build/
-  mkdir -p build && cd build/
+  3.autoreconf --force --install
+  
+  4.rm -rf build/
+  
+  5.mkdir -p build && cd build/
+  
 
   # Disabling sanitizers is important for release versions!
   # The prefix and sysconfdir are, obviously, dependent on the distribution.
-  ../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
-  make
-  sudo make install
+  6.  ../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
+  
+  7.make
+  
+  8.sudo make install
 
   
 
