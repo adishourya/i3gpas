@@ -24,6 +24,8 @@ dependencies:
 
   # Disabling sanitizers is important for release versions!
   # The prefix and sysconfdir are, obviously, dependent on the distribution.
+  
+  
   6.  ../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
   
   7.make
